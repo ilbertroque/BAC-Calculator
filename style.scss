@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900');
+
+$backgroundColor: #fff;
+$highlightColor: #4893ea;
+$textColor: #111;
+$mainFont: 'Montserrat', sans-serif;
+$secondaryFont: 'Source Code Pro', monospace;
+* {
+	margin: 0;
+	padding: 0;
+	color: $textColor;
+	text-decoration: none;
+}
+
+body {
+	background: $backgroundColor;
+	font-family: $mainFont;
+	color: $textColor;
+}
+
+.wrapper {
+	padding: 2em 3em;
+	.header {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		height: fit-content;
+		padding-bottom: 100px;
+
+		a {
+			font-size: 1.7em;
+		}
+	}
+
+	.section-inactive {
+		.data-item {
+			opacity: 0;
+			transition: .5s;
+		}
+	}
+
+	.section {
+		padding-top: 2em;
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-column-gap: 30px;
+		grid-row-gap: 100px;
+		grid-template-areas: ". . . g g w w t t . . ." "b b b wi wi wi c c c s s s";
+		transition: .5s;
+		.data-item {
+			text-align: center;
+			h2 {
+				font-weight: 300;
+				font-size: 1.2em;
+			}
+			img {
+				width: 100px;
+				height: 100px;
+				display: block;
+				margin: 30px auto;
+			}
+
+			input {
+				width: 70%;
+			}
+
+			output {
+				display: block;
+			}
+		}
+
+		.gender {
+			grid-area: g;
+		}
+		.weight {
+			grid-area: w;
+		}
+		.time {
+			grid-area: t;
+		}
+		.beers {
+			grid-area: b;
+		}
+		.wine {
+			grid-area: wi;
+		}
+		.cocktails {
+			grid-area: c;
+		}
+		.spirits {
+			grid-area: s;
+		}
+	}
+
+	.submit-inactive {
+		opacity: 0;
+		transition: .5s;
+	}
+
+	.submit {
+		display: flex;
+		justify-content: center;
+		padding-top: 100px;
+		#submit {
+			font-size: 1.5em;
+			padding: 10px 20px;
+			background: #4893ea;
+			border-radius: 10px;
+			box-shadow: none;
+			border: none;
+		}
+	}
+
+	.results-inactive {
+		opacity: 0;
+		transition: .5s;
+	}
+
+	.results {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		transition: .5s;
+		.result-wrapper {
+			text-align: center;
+			padding-top: 30px;
+			h1 {
+				text-align: center;
+				font-size: 4em;
+				padding: 10px;
+				font-weight: 300;
+			}
+
+			#back {
+				font-size: 1.5em;
+				padding: 10px 20px;
+				background: #4893ea;
+				border-radius: 10px;
+				box-shadow: none;
+				border: none;
+				margin: 20px;
+			}
+
+			h3 {
+				font-weight: 300;
+				font-size: 2em;
+				text-align: center;
+			}
+		}
+	}
+}

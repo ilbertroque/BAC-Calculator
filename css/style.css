@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900");
+* {
+  margin: 0;
+  padding: 0;
+  color: #111;
+  text-decoration: none;
+}
+
+body {
+  background: #fff;
+  font-family: "Montserrat", sans-serif;
+  color: #111;
+}
+
+.wrapper {
+  padding: 2em 3em;
+}
+
+.wrapper .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-bottom: 100px;
+}
+
+.wrapper .header a {
+  font-size: 1.7em;
+}
+
+.wrapper .section-inactive .data-item {
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.wrapper .section {
+  padding-top: 2em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 100px;
+      grid-template-areas: ". . . g g w w t t . . ." "b b b wi wi wi c c c s s s";
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.wrapper .section .data-item {
+  text-align: center;
+}
+
+.wrapper .section .data-item h2 {
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
+.wrapper .section .data-item img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 30px auto;
+}
+
+.wrapper .section .data-item input {
+  width: 70%;
+}
+
+.wrapper .section .data-item output {
+  display: block;
+}
+
+.wrapper .section .gender {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-area: g;
+}
+
+.wrapper .section .weight {
+  -ms-grid-row: 1;
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 2;
+  grid-area: w;
+}
+
+.wrapper .section .time {
+  -ms-grid-row: 1;
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 2;
+  grid-area: t;
+}
+
+.wrapper .section .beers {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: b;
+}
+
+.wrapper .section .wine {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-area: wi;
+}
+
+.wrapper .section .cocktails {
+  -ms-grid-row: 2;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 3;
+  grid-area: c;
+}
+
+.wrapper .section .spirits {
+  -ms-grid-row: 2;
+  -ms-grid-column: 10;
+  -ms-grid-column-span: 3;
+  grid-area: s;
+}
+
+.wrapper .submit-inactive {
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.wrapper .submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 100px;
+}
+
+.wrapper .submit #submit {
+  font-size: 1.5em;
+  padding: 10px 20px;
+  background: #4893ea;
+  border-radius: 10px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+
+.wrapper .results-inactive {
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.wrapper .results {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.wrapper .results .result-wrapper {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.wrapper .results .result-wrapper h1 {
+  text-align: center;
+  font-size: 4em;
+  padding: 10px;
+  font-weight: 300;
+}
+
+.wrapper .results .result-wrapper #back {
+  font-size: 1.5em;
+  padding: 10px 20px;
+  background: #4893ea;
+  border-radius: 10px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  margin: 20px;
+}
+
+.wrapper .results .result-wrapper h3 {
+  font-weight: 300;
+  font-size: 2em;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
