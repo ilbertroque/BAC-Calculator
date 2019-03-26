@@ -47,6 +47,11 @@ body {
 		grid-row-gap: 100px;
 		grid-template-areas: ". . . g g w w t t . . ." "b b b wi wi wi c c c s s s";
 		transition: .5s;
+		@media screen and (max-width: 480px) {
+			grid-template-areas: "g g g g g g g g g g g g" "w w w w w w w w w w w w" "t t t t t t t t t t t t"
+				"b b b b b b b b b b b b" "wi wi wi wi wi wi wi wi wi wi wi wi" "c c c c c c c c c c c c"
+				"s s s s s s s s s s s s";
+		}
 		.data-item {
 			text-align: center;
 			h2 {
@@ -93,6 +98,7 @@ body {
 	}
 
 	.submit-inactive {
+		display: none;
 		opacity: 0;
 		transition: .5s;
 	}
@@ -112,6 +118,7 @@ body {
 	}
 
 	.results-inactive {
+		display: none;
 		opacity: 0;
 		transition: .5s;
 	}
