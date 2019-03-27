@@ -9,66 +9,15 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="header">
-            <a href="">BAC Calculator</a>
-        </div>
-        <div id="sec" class="section">
-            <div class="data-item gender">
-                <h2>Gender</h2>
-                <img src="images/venus-mars-solid.svg" alt="gender-image">
-                <select name="gender" id="gender">
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                </select>
+        <header>
+            <nav>
+                <a href="/">BAC Calculator</a>
+            </nav>
+            <div class="heroText">
+                <h1>Welcome to the best BAC Calculator</h1>
+                <p>Have you ever left the bar feeling sober but wondering if you are legally able to drive?...Sure you can voluntary stop a police and say: "Hey officer, can you check if I'm drunk?", but we all can imagine how that ends. </p>
             </div>
-            <div class="data-item weight">
-                <h2>Weight (lb)</h2>
-                <img src="images/weight-solid.svg" alt="gender-image">
-                <input id="weight" type="range" value="150" min="1" max="300" oninput="weightDisplay.value = weight.value">
-                <output name="weightOutput" id="weightDisplay">150</output>
-            </div>
-            <div class="data-item time">
-                <h2>Time Elapsed (hrs)</h2>
-                <img src="images/hourglass-end-solid.svg" alt="gender-image">
-                <input id="time" type="range" min="1" max="24" value="2" oninput="timeDisplay.value = time.value">
-                <output name="timeOutput" id="timeDisplay">2</output>
-            </div>
-            <div class="data-item beers">
-                <h2>Beers (12oz)</h2>
-                <img src="images/beer-solid.svg" alt="gender-image">
-                <input id="beers" type="range" min="0" max="30" value="0" oninput="beersDisplay.value = beers.value">
-                <output name="beersOutput" id="beersDisplay">0</output>
-            </div>
-            <div class="data-item wine">
-                <h2>Wine</h2>
-                <img src="images/wine-glass-alt-solid.svg" alt="gender-image">
-                <input id="wine" type="range" min="0" max="10" value="0" oninput="wineDisplay.value = wine.value">
-                <output name="wineOutput" id="wineDisplay">0</output>
-            </div>
-            <div class="data-item cocktails">
-                <h2>Cocktails</h2>
-                <img src="images/cocktail-solid.svg" alt="gender-image">
-                <input id="cocktails" type="range" min="0" max="15" value="0" oninput="cocktailsDisplay.value = cocktails.value">
-                <output name="cocktailsOutput" id="cocktailsDisplay">0</output>
-            </div>
-            <div class="data-item spirits">
-                <h2>Spirits or Shots</h2>
-                <img src="images/glass-whiskey-solid.svg" alt="gender-image">
-                <input id="spirits" type="range" min="0" max="20" value="0" oninput="spiritsDisplay.value = spirits.value">
-                <output name="spiritsOutput" id="spiritsDisplay">0</output>
-            </div>
-        </div>
-        <div id="submit-container" class="submit">
-            <button id="submit"  onclick="bacCalc()">Submit</button>
-        </div>
-        
-        <div id="result-container" class="results results-inactive">
-            <div class="result-wrapper">
-                <h1>Your BAC</h1>
-                <h3 id="result"></h3>
-                <button id="back"  onclick="toggle()">Go Back</button>
-            </div>
-        </div>
+        </header>
     </div>
     <script src="js/main.js"></script>
 </body>
