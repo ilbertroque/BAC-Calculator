@@ -32,10 +32,41 @@ body {
 
 	header {
 		height: 97vh;
+
+		.bg-pics {
+			position: absolute;
+			opacity: 0.2;
+			z-index: -1;
+			width: 400px;
+			height: 400px;
+		}
+
+		.beer-img {
+			left: 5vw;
+			top: 50vh;
+			transform: rotate(30deg);
+		}
+		.wine-img {
+			left: 50vw;
+			top: 50vh;
+			transform: rotate(30deg);
+		}
+		.cocktails-img {
+			left: 80vw;
+			top: 50vh;
+			transform: rotate(-30deg);
+		}
+		.spirits-img {
+			left: 35vw;
+			top: 50vh;
+			transform: rotate(-30deg);
+		}
+
 		nav {
 			width: 94vw;
 			height: 100px;
 			position: fixed;
+			z-index: 100;
 			text-align: left;
 			display: flex;
 			justify-content: center;
@@ -157,8 +188,6 @@ body {
 
 		.physical-info {
 			margin-top: 200px;
-			.gender {
-			}
 
 			.weight {
 				.weight-img {
