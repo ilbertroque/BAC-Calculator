@@ -17,27 +17,226 @@ body {
 	font-family: $mainFont;
 	font-size: 20px;
 }
+.wrapper > * {
+	flex: 1 100%;
+}
 
 .wrapper {
-	padding: 5%;
+	position: relative;
+	display: flex;
+	flex-flow: row wrap;
+	font-weight: bold;
+	text-align: center;
+	justify-content: center;
+	padding: 3vh 3vw;
 
 	header {
+		height: 97vh;
 		nav {
-			//text-align: center;
+			width: 94vw;
+			height: 100px;
+			position: fixed;
+			text-align: left;
+			display: flex;
+			justify-content: center;
+			a {
+				max-width: 500px;
+				font-size: 1.3em;
+				font-weight: 300;
+				img {
+					max-width: 30px;
+					max-height: 30px;
+					display: inline-block;
+					margin: 0 5px;
+				}
+			}
+
+			.logo:hover {
+				cursor: pointer;
+
+				img:nth-child(1) {
+					animation: wave .5s ease 0s infinite;
+				}
+				img:nth-child(2) {
+					animation: wave .5s ease .2s infinite;
+				}
+				img:nth-child(3) {
+					animation: wave .5s ease .4s infinite;
+				}
+				img:nth-child(4) {
+					animation: wave .5s ease .6s infinite;
+				}
+			}
 		}
 
 		.heroText {
-			padding-top: 15%;
-			h1 {
-				//text-align: center;
-				font-weight: 300;
-				font-size: 3em;
-			}
+			width: 94vw;
+			height: 94vh;
+			//padding-top: 100px;
+			margin: auto;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.hero-wrapper {
+				max-width: 1000px;
+				height: fit-content;
+				h1 {
+					//text-align: center;
+					font-weight: 300;
+					font-size: 2.5em;
+					margin-bottom: 20px;
+				}
 
-			p {
-				opacity: 0.7;
-				line-height: 1.4em;
+				p {
+					font-weight: 300;
+					opacity: 0.7;
+					line-height: 1.4em;
+				}
+
+				h4 {
+					margin-top: 30px;
+				}
+
+				.button {
+					display: block;
+					margin: 40px auto 0 auto;
+					width: fit-content;
+					background: $highlightColor;
+					font-weight: 300;
+					font-size: 1.5em;
+					padding: 10px 20px;
+					border-radius: 10px;
+					box-shadow: 3px 3px 10px rgba(#111, .2);
+					color: #fff;
+				}
 			}
 		}
+
+		.arrow {
+			position: absolute;
+			left: 50%;
+			top: 92vh;
+			width: 30px;
+			height: 30px;
+			transform: translateX(-50%) rotate(45deg);
+			border-bottom: 2px solid black;
+			border-right: 2px solid black;
+			animation: breathe 3s ease infinite;
+		}
+	}
+
+	section {
+		height: 97vh;
+		width: 94vw;
+		.attr {
+			display: inline-block;
+			margin: 0 50px;
+			margin: 20px 0;
+			display: block;
+			h2 {
+				font-weight: 300;
+				font-size: 1.5em;
+				margin-bottom: 20px;
+			}
+
+			select {
+				height: 50px;
+				width: 200px;
+				font-size: 1.3em;
+			}
+
+			input {
+				height: 30px;
+				width: 100px;
+				border-radius: 25px;
+				border: 1px solid #666;
+				padding: 10px 20px;
+				font-size: 1.3em;
+			}
+		}
+
+		.physical-info {
+			margin-top: 200px;
+			.gender {
+			}
+
+			.weight {
+				.weight-img {
+					max-width: 250px;
+					max-height: 250px;
+					img {
+						width: 100%;
+						height: auto;
+					}
+				}
+			}
+
+			.time {
+				.time-img {
+					max-width: 200px;
+					max-height: 200px;
+					img {
+						width: 100%;
+						height: auto;
+					}
+				}
+			}
+		}
+
+		.alcohol-info {
+			margin-top: 100px;
+		}
+
+		.submit {
+			margin-top: 50px;
+			button {
+				padding: 10px 20px;
+				background: $highlightColor;
+				color: #fff;
+				font-size: 1.5em;
+				border: none;
+				border-radius: 20px;
+				font-weight: 300;
+			}
+
+			button:hover {
+				transform: scale(1.1);
+				transition: .2s;
+			}
+		}
+
+		.results {
+			margin-top: 100px;
+			margin-bottom: 100px;
+			h1 {
+				font-size: 3em;
+				font-weight: 300;
+			}
+
+			h2 {
+				font-size: 2.5em;
+				font-weight: 300;
+			}
+		}
+	}
+}
+
+@keyframes wave {
+	50% {
+		transform: translateY(-10px);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes breathe {
+	50% {
+		transform: translateX(-50%) rotate(45deg) scale(1.2);
+	}
+
+	100% {
+		transform: translateX(-50%) rotate(45deg) scale(1);
 	}
 }

@@ -11,21 +11,289 @@ body {
   font-size: 20px;
 }
 
+.wrapper > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 100%;
+          flex: 1 100%;
+}
+
 .wrapper {
-  padding: 5%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3vh 3vw;
+}
+
+.wrapper header {
+  height: 97vh;
+}
+
+.wrapper header nav {
+  width: 94vw;
+  height: 100px;
+  position: fixed;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper header nav a {
+  max-width: 500px;
+  font-size: 1.3em;
+  font-weight: 300;
+}
+
+.wrapper header nav a img {
+  max-width: 30px;
+  max-height: 30px;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.wrapper header nav .logo:hover {
+  cursor: pointer;
+}
+
+.wrapper header nav .logo:hover img:nth-child(1) {
+  -webkit-animation: wave .5s ease 0s infinite;
+          animation: wave .5s ease 0s infinite;
+}
+
+.wrapper header nav .logo:hover img:nth-child(2) {
+  -webkit-animation: wave .5s ease .2s infinite;
+          animation: wave .5s ease .2s infinite;
+}
+
+.wrapper header nav .logo:hover img:nth-child(3) {
+  -webkit-animation: wave .5s ease .4s infinite;
+          animation: wave .5s ease .4s infinite;
+}
+
+.wrapper header nav .logo:hover img:nth-child(4) {
+  -webkit-animation: wave .5s ease .6s infinite;
+          animation: wave .5s ease .6s infinite;
 }
 
 .wrapper header .heroText {
-  padding-top: 15%;
+  width: 94vw;
+  height: 94vh;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.wrapper header .heroText h1 {
+.wrapper header .heroText .hero-wrapper {
+  max-width: 1000px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.wrapper header .heroText .hero-wrapper h1 {
   font-weight: 300;
-  font-size: 3em;
+  font-size: 2.5em;
+  margin-bottom: 20px;
 }
 
-.wrapper header .heroText p {
+.wrapper header .heroText .hero-wrapper p {
+  font-weight: 300;
   opacity: 0.7;
   line-height: 1.4em;
+}
+
+.wrapper header .heroText .hero-wrapper h4 {
+  margin-top: 30px;
+}
+
+.wrapper header .heroText .hero-wrapper .button {
+  display: block;
+  margin: 40px auto 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #4893ea;
+  font-weight: 300;
+  font-size: 1.5em;
+  padding: 10px 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px 10px rgba(17, 17, 17, 0.2);
+          box-shadow: 3px 3px 10px rgba(17, 17, 17, 0.2);
+  color: #fff;
+}
+
+.wrapper header .arrow {
+  position: absolute;
+  left: 50%;
+  top: 92vh;
+  width: 30px;
+  height: 30px;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+          transform: translateX(-50%) rotate(45deg);
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  -webkit-animation: breathe 3s ease infinite;
+          animation: breathe 3s ease infinite;
+}
+
+.wrapper section {
+  height: 97vh;
+  width: 94vw;
+}
+
+.wrapper section .attr {
+  display: inline-block;
+  margin: 0 50px;
+  margin: 20px 0;
+  display: block;
+}
+
+.wrapper section .attr h2 {
+  font-weight: 300;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.wrapper section .attr select {
+  height: 50px;
+  width: 200px;
+  font-size: 1.3em;
+}
+
+.wrapper section .attr input {
+  height: 30px;
+  width: 100px;
+  border-radius: 25px;
+  border: 1px solid #666;
+  padding: 10px 20px;
+  font-size: 1.3em;
+}
+
+.wrapper section .physical-info {
+  margin-top: 200px;
+}
+
+.wrapper section .physical-info .weight .weight-img {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.wrapper section .physical-info .weight .weight-img img {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper section .physical-info .time .time-img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.wrapper section .physical-info .time .time-img img {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper section .alcohol-info {
+  margin-top: 100px;
+}
+
+.wrapper section .submit {
+  margin-top: 50px;
+}
+
+.wrapper section .submit button {
+  padding: 10px 20px;
+  background: #4893ea;
+  color: #fff;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 20px;
+  font-weight: 300;
+}
+
+.wrapper section .submit button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.wrapper section .results {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.wrapper section .results h1 {
+  font-size: 3em;
+  font-weight: 300;
+}
+
+.wrapper section .results h2 {
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+@-webkit-keyframes wave {
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes wave {
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes breathe {
+  50% {
+    -webkit-transform: translateX(-50%) rotate(45deg) scale(1.2);
+            transform: translateX(-50%) rotate(45deg) scale(1.2);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) rotate(45deg) scale(1);
+            transform: translateX(-50%) rotate(45deg) scale(1);
+  }
+}
+
+@keyframes breathe {
+  50% {
+    -webkit-transform: translateX(-50%) rotate(45deg) scale(1.2);
+            transform: translateX(-50%) rotate(45deg) scale(1.2);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) rotate(45deg) scale(1);
+            transform: translateX(-50%) rotate(45deg) scale(1);
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -11,9 +11,6 @@ function bacCalc() {
 	var alcoholDose;
 	var alcoholPerGram;
 	var result;
-	var section = document.getElementById('sec');
-	var resultContainer = document.getElementById('result-container');
-	var submitContainer = document.getElementById('submit-container');
 
 	if (gender == 'male') {
 		genderCoe = 0.68;
@@ -28,18 +25,4 @@ function bacCalc() {
 	result = alcoholPerGram - time * 0.015;
 
 	document.getElementById('result').innerHTML = result.toFixed(3);
-
-	section.classList.toggle('section-inactive');
-	resultContainer.classList.toggle('results-inactive');
-	submitContainer.classList.toggle('submit-inactive');
-}
-
-function toggle() {
-	var section = document.getElementById('sec');
-	var resultContainer = document.getElementById('result-container');
-	var submitContainer = document.getElementById('submit-container');
-
-	section.classList.toggle('section-inactive');
-	resultContainer.classList.toggle('results-inactive');
-	submitContainer.classList.toggle('submit-inactive');
 }
