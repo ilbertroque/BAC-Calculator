@@ -8,64 +8,65 @@
     <title>BAC Calculator</title>
 </head>
 <body>
+    <nav id="navbar">
+        <a class="logo" href="/">
+            <img src="images/beer-solid.svg" alt="" srcset="">
+            <img src="images/wine-glass-alt-solid.svg" alt="" srcset="">
+            <img src="images/cocktail-solid.svg" alt="" srcset="">
+            <img src="images/glass-whiskey-solid.svg" alt="" srcset="">
+        </a>
+    </nav>
     <div class="wrapper">
         <header>
-            <nav>
-                <a class="logo" href="/">
-                    <img src="images/beer-solid.svg" alt="" srcset="">
-                    <img src="images/wine-glass-alt-solid.svg" alt="" srcset="">
-                    <img src="images/cocktail-solid.svg" alt="" srcset="">
-                    <img src="images/glass-whiskey-solid.svg" alt="" srcset="">
-                </a>
-            </nav>
+            
             <img class="bg-pics beer-img" src="images/beer-solid.svg" alt="" srcset="">
             <img class="bg-pics wine-img" src="images/wine-glass-alt-solid.svg" alt="" srcset="">
             <img class="bg-pics cocktails-img" src="images/cocktail-solid.svg" alt="" srcset="">
             <img class="bg-pics spirits-img" src="images/glass-whiskey-solid.svg" alt="" srcset="">
             <div class="heroText">
-                <div class="hero-wrapper">
+                <div id="hero" class="hero-wrapper">
                     <h1>Welcome to the best BAC Calculator</h1>
                     <p>Have you ever left the bar feeling sober but wondering if you are legally able to drive?...Sure you can voluntary stop a police and say: "Hey officer, can you check if I'm drunk?", but we all can imagine how that ends. </p>
                     <h4>For the sake of safety and security, do yourself a favor and press the button.</h4>
                     <a href="#calculate" class="button">Calculate My BAC</a>
                 </div>
             </div>
-            <div class="arrow"></div>
+            <div onclick="smoothScroll(document.getElementById('calculate'))" class="arrow"></div>
         </header>
         <section id="calculate">
             <div class="physical-info">
                 <div class="attr gender">
-                    <h2>Your Gender:</h2>
+                    <h2>Gender:</h2>
                     <select name="gender" id="gender">
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                     </select>
                 </div>
                 <div class="attr weight">
-                    <h2>Your Weight (lbs):</h2>
-                    <input id="weight" type="text">
+                    <h2>Weight (lbs):</h2>
+                    <input value="0" id="weight" type="text">
                 </div>
                 <div class="attr time">
-                    <h2>Time Drinking:</h2>
-                    <input id="time" type="text">
+                    <h2>Time (hrs):</h2>
+                    <input value="0" id="time" type="text">
                 </div>
             </div>
             <div class="alcohol-info">
                 <div class="attr beers">
                     <h2>Beers:</h2>
-                    <input id="beers" type="text">
+                    <input value="0" id="beers" type="text">
                 </div>
                 <div class="attr wine">
                     <h2>Wine:</h2>
-                    <input id="wine" type="text">
+                    <input value="0" id="wine" type="text">
                 </div>
                 <div class="attr cocktails">
                     <h2>Cocktails:</h2>
-                    <input id="cocktails" type="text">
+                    <input value="0" id="cocktails" type="text">
                 </div>
                 <div class="attr spirits">
                     <h2>Spirits:</h2>
-                    <input id="spirits" type="text">
+                    <input value="0" id="spirits" type="text">
                 </div>
             </div>
             <div class="submit">
