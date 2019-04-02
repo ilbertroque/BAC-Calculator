@@ -6,6 +6,10 @@
   text-decoration: none;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
@@ -236,6 +240,10 @@ nav .logo:hover img:nth-child(4) {
   border: 1px solid #666;
   padding: 10px 20px;
   font-size: 1.3em;
+}
+
+.wrapper section .attr input:focus {
+  outline: none;
 }
 
 @media screen and (min-width: 100px) {
