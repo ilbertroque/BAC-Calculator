@@ -28,7 +28,7 @@
                     <h1>Welcome to the best BAC Calculator</h1>
                     <p>Have you ever left the bar feeling sober but wondering if you are legally able to drive?...Sure you can voluntary stop a police and say: "Hey officer, can you check if I'm drunk?", but we all can imagine how that ends. </p>
                     <h4>For the sake of safety and security, do yourself a favor and press the button.</h4>
-                    <a href="#calculate" class="button">Calculate My BAC</a>
+                    <a onclick="smoothScroll(document.getElementById('calculate'))" href="#calculate" class="button">Calculate My BAC</a>
                 </div>
             </div>
             <div onclick="smoothScroll(document.getElementById('calculate'))" class="arrow"></div>
@@ -44,29 +44,29 @@
                 </div>
                 <div class="attr weight">
                     <h2>Weight (lbs):</h2>
-                    <input value="0" id="weight" type="text">
+                    <input onkeypress="validate(event)" value="0" id="weight" type="text">
                 </div>
                 <div class="attr time">
                     <h2>Time (hrs):</h2>
-                    <input value="0" id="time" type="text">
+                    <input onkeypress="validate(event)" value="0" id="time" type="text">
                 </div>
             </div>
             <div class="alcohol-info">
                 <div class="attr beers">
                     <h2>Beers:</h2>
-                    <input value="0" id="beers" type="text">
+                    <input onkeypress="validate(event)" value="0" id="beers" type="text">
                 </div>
                 <div class="attr wine">
                     <h2>Wine:</h2>
-                    <input value="0" id="wine" type="text">
+                    <input onkeypress="validate(event)" value="0" id="wine" type="text">
                 </div>
                 <div class="attr cocktails">
                     <h2>Cocktails:</h2>
-                    <input value="0" id="cocktails" type="text">
+                    <input onkeypress="validate(event)" value="0" id="cocktails" type="text">
                 </div>
                 <div class="attr spirits">
                     <h2>Spirits:</h2>
-                    <input value="0" id="spirits" type="text">
+                    <input onkeypress="validate(event)" value="0" id="spirits" type="text">
                 </div>
             </div>
             <div class="submit">
