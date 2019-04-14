@@ -1,0 +1,53 @@
+{
+	"data": {
+		"bacLevelInfo": {
+			"bac02": "No loss of coordination, slight euphoria, and loss of shyness. Relaxation, but depressant effects are not apparent.",
+			"bac04": "Feeling of well-being, relaxation, lower inhibitions, and sensation of warmth. Euphoria. Some minor impairment of judgment and memory, lowering of caution.",
+			"bac06": "Slight impairment of balance, speech, vision, reaction time, and hearing. Euphoria. Reduced judgment and self-control. Impaired reasoning and memory.",
+			"bac10": "Significant impairment of motor coordination and loss of good judgment. Speech may be slurred; balance, peripheral vision, reaction time, and hearing will be impaired.",
+			"bac13": "Gross motor impairment and lack of physical control. Blurred vision and major loss of balance. Euphoria is reducing and beginning dysphoria (a state of feeling unwell)",
+			"bac16": "Dysphoria predominates, nausea may appear. The drinker has the appearance of a sloppy drunk.",
+			"bac20": "Needs assistance in walking; total mental confusion. Dysphoria with nausea and vomiting; possible blackout.",
+			"bac24": "Alcohol poisoning. Loss of consciousness.",
+			"bac40": "Onset of coma, possible death due to respiratory arrest."
+		},
+		"liquorTypes": {
+			"mojito": {
+				"name": "Mojito",
+				"drinkEquiv": 1.3
+			},
+			"margarita": {
+				"name": "Margarita",
+				"drinkEquiv": 1.7
+			},
+			"PiñaCol": {
+				"name": "Piña Coladaa",
+				"drinkEquiv": 2.0
+			},
+			"martiniDry": {
+				"name": "Martini - Extra Dry",
+				"drinkEquiv": 1.4
+			},
+			"martiniTrad": {
+				"name": "Martini - Traditional",
+				"drinkEquiv": 1.2
+			},
+			"bourbon": {
+				"name": "Bourbon & Water",
+				"drinkEquiv": 1.3
+			},
+			"vodkaton": {
+				"name": "Vodka & Tonic",
+				"drinkEquiv": 1.3
+			},
+			"ginton": {
+				"name": "Gin & Tonic",
+				"drinkEquiv": 1.6
+			},
+			"cosmopolitan": {
+				"name": "Cosmopolitan",
+				"drinkEquiv": 1.3
+			}
+		}
+	}
+}
