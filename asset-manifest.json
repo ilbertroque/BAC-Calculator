@@ -1,5 +1,5 @@
 {
-  "main.css": "/BAC-Calculator/static/css/main.c6a4bf2e.chunk.css",
+  "main.css": "/BAC-Calculator/static/css/main.832d41d8.chunk.css",
   "main.js": "/BAC-Calculator/static/js/main.06ef544d.chunk.js",
   "main.js.map": "/BAC-Calculator/static/js/main.06ef544d.chunk.js.map",
   "runtime~main.js": "/BAC-Calculator/static/js/runtime~main.cc4b2c29.js",
@@ -8,8 +8,8 @@
   "static/js/2.b0d5ea60.chunk.js": "/BAC-Calculator/static/js/2.b0d5ea60.chunk.js",
   "static/js/2.b0d5ea60.chunk.js.map": "/BAC-Calculator/static/js/2.b0d5ea60.chunk.js.map",
   "index.html": "/BAC-Calculator/index.html",
-  "precache-manifest.d13c481330afbc5ecd2a91fdeffa462f.js": "/BAC-Calculator/precache-manifest.d13c481330afbc5ecd2a91fdeffa462f.js",
+  "precache-manifest.91eea32fed2ea58cdd68b095e791be0b.js": "/BAC-Calculator/precache-manifest.91eea32fed2ea58cdd68b095e791be0b.js",
   "service-worker.js": "/BAC-Calculator/service-worker.js",
   "static/css/2.0828abd8.chunk.css.map": "/BAC-Calculator/static/css/2.0828abd8.chunk.css.map",
-  "static/css/main.c6a4bf2e.chunk.css.map": "/BAC-Calculator/static/css/main.c6a4bf2e.chunk.css.map"
+  "static/css/main.832d41d8.chunk.css.map": "/BAC-Calculator/static/css/main.832d41d8.chunk.css.map"
 }
