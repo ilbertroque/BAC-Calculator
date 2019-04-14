@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "ae2fce4741aa642e9e4e",
-    "url": "/BAC-Calculator/static/css/main.832d41d8.chunk.css"
+    "revision": "d75520be085692b492af",
+    "url": "/BAC-Calculator/static/css/main.e81cec95.chunk.css"
   },
   {
-    "revision": "ae2fce4741aa642e9e4e",
+    "revision": "d75520be085692b492af",
     "url": "/BAC-Calculator/static/js/main.06ef544d.chunk.js"
   },
   {
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/BAC-Calculator/static/js/2.b0d5ea60.chunk.js"
   },
   {
-    "revision": "3d883a46ccca06976edd315db6631ad4",
+    "revision": "ff0504b0ec7d92ca62dcf6fac0a6dc79",
     "url": "/BAC-Calculator/index.html"
   }
 ];
