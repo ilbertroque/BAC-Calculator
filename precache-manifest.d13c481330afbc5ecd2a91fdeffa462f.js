@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/BAC-Calculator/static/js/2.b0d5ea60.chunk.js"
   },
   {
-    "revision": "b5cd2c5c8b694e3abf261880ab55aef7",
+    "revision": "c97295887efbee5f7941c24c573e94ee",
     "url": "/BAC-Calculator/index.html"
   }
 ];
