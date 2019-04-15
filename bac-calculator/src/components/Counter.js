@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Counter = (props) => {
 	return (
-		<div className="card mx-auto mb-5" style={{ width: 18 + 'rem' }}>
+		<div className="card mx-auto mw-25 mb-5" style={{ minWidth: 18 + 'rem', maxWidth: 45 + 'rem' }}>
 			<div className="card-body">
 				<h5 className="card-title text-center">{props.title}</h5>
 				<div className="d-flex justify-content-between">

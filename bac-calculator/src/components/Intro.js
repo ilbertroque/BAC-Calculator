@@ -11,7 +11,8 @@ export class Intro extends React.Component {
 				</p>
 				<hr className="my-4" />
 				<p>
-					It uses utility classes for typography and spacing to space content out within the larger container.
+					This app provides a rough BAC aproximation using approved global equations based on gender, weight,
+					and time elapsed.
 				</p>
 				<p className="lead">
 					<a className="btn btn-primary btn-lg" href="#" role="button">
