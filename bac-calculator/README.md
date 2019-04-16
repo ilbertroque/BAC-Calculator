@@ -1,6 +1,6 @@
 ## Blood Alcohol Concentration Calculator
 
-Simple BAC calculator that provides an approximate<br> 
+Simple BAC calculator that provides an approximate 
 value of your BAC based on your gender, weight and time<br> 
 drinking. Currently on a prototype stage.
 
