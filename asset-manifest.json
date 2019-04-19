@@ -1,15 +1,15 @@
 {
-  "main.css": "/BAC-Calculator/static/css/main.e81cec95.chunk.css",
-  "main.js": "/BAC-Calculator/static/js/main.b302bc31.chunk.js",
-  "main.js.map": "/BAC-Calculator/static/js/main.b302bc31.chunk.js.map",
+  "main.css": "/BAC-Calculator/static/css/main.287f22ba.chunk.css",
+  "main.js": "/BAC-Calculator/static/js/main.950dabbe.chunk.js",
+  "main.js.map": "/BAC-Calculator/static/js/main.950dabbe.chunk.js.map",
   "runtime~main.js": "/BAC-Calculator/static/js/runtime~main.cc4b2c29.js",
   "runtime~main.js.map": "/BAC-Calculator/static/js/runtime~main.cc4b2c29.js.map",
   "static/css/2.0828abd8.chunk.css": "/BAC-Calculator/static/css/2.0828abd8.chunk.css",
   "static/js/2.b0d5ea60.chunk.js": "/BAC-Calculator/static/js/2.b0d5ea60.chunk.js",
   "static/js/2.b0d5ea60.chunk.js.map": "/BAC-Calculator/static/js/2.b0d5ea60.chunk.js.map",
   "index.html": "/BAC-Calculator/index.html",
-  "precache-manifest.35c2884fe287fad9f7bb1aa39c6fa988.js": "/BAC-Calculator/precache-manifest.35c2884fe287fad9f7bb1aa39c6fa988.js",
+  "precache-manifest.d28fa8fdd459c5285138acfd77d099a5.js": "/BAC-Calculator/precache-manifest.d28fa8fdd459c5285138acfd77d099a5.js",
   "service-worker.js": "/BAC-Calculator/service-worker.js",
   "static/css/2.0828abd8.chunk.css.map": "/BAC-Calculator/static/css/2.0828abd8.chunk.css.map",
-  "static/css/main.e81cec95.chunk.css.map": "/BAC-Calculator/static/css/main.e81cec95.chunk.css.map"
+  "static/css/main.287f22ba.chunk.css.map": "/BAC-Calculator/static/css/main.287f22ba.chunk.css.map"
 }
